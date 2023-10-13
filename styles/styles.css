@@ -1,0 +1,106 @@
+/*****************************/
+/* CUSTOM VARIABLES **********/
+:root {
+    --background-color: white;
+    --bg-color-mobile-nav: #6f9f50;
+
+
+    /* Contact page colors */
+    --contact-bg-color: white;
+    --contact-border-color: #dde0e5;
+    --contact-font-color: black;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--contact-font-color);
+}
+
+
+#nav-top {
+    background-color: #204527;
+}
+
+#mobile-nav-bottom {
+    background-color: var(--bg-color-mobile-nav);
+}
+
+
+#experience-container, #contact-form-btn, #requirement-container {
+    margin-bottom: 100px;
+}
+
+/*****************************/
+/* DARKMODE ******************/
+
+.dark-mode {
+    --background-color: #23272d;
+    --bg-color-mobile-nav: #233b23;
+    --contact-bg-color: rgba(47, 52, 59, 0.82);
+    --contact-border-color: #383c40;
+    --contact-font-color: white;
+}
+
+#darkmode-toggler {
+    fill: white;
+}
+
+#darkmode-toggler:hover {
+    fill: #afadad;
+    cursor: pointer;
+}
+
+/*****************************/
+/* CONTACT FORM **************/
+
+#contact-form label {
+    width: 100%;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid solid none solid;
+    border-radius: 12px 12px 0 0;
+}
+
+#contact-form input {
+    border-radius: 0 0 12px 12px;
+    padding: 10px;
+}
+
+#contact-form-btn, #experience-form-btn {
+    background-color: #89da52;
+    border: transparent;
+}
+
+#message {
+    resize: none;
+    border-radius: 0 0 12px 12px;
+}
+
+#contact-form label, #contact-form input, #message {
+    background-color: var(--contact-bg-color);
+    border-color: var(--contact-border-color);
+    color: var(--contact-font-color);
+}
+
+/*****************************/
+/***** REQUIREMENTS FORM *****/
+.accordion{
+    --bs-accordion-btn-bg:#A8D08D;
+    --bs-accordion-active-bg: #0D4722;
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-btn-focus-box-shadow:none;
+    --bs-accordion-bg: #F1F7ED;
+    --bs-accordion-btn-focus-border-color: unset;
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+
+.accordion-button{
+    border-top: 1px solid #000000;
+}
+
+.accordion-item:last-child .accordion-button{
+    border-bottom: 2px solid  #000000;
+}
