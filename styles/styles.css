@@ -3,12 +3,29 @@
 :root {
     --background-color: white;
     --bg-color-mobile-nav: #6f9f50;
+    --placeholder-color: #24282d;
 
+    /* Survey page colors */
+    --survey-bg-color: white;
+    --survey-border-color: #dde0e5;
+    --survey-font-color: black;
+    --experience-bg-color: white;
+    --experience-border-color: #dde0e5;
+    --experience-font-color: black;
 
     /* Contact page colors */
     --contact-bg-color: white;
     --contact-border-color: #dde0e5;
     --contact-font-color: black;
+
+    /*Button formatting */
+    --buttn-bg-color:#204527;
+    --button-border: none;
+    --button-text-color:white;
+
+    /* Requirements accordion*/
+    --bs-accordion-bg-two: #F1F7ED;
+    --bs-accordion-color-two: #000000;
 }
 
 body {
@@ -16,18 +33,24 @@ body {
     color: var(--contact-font-color);
 }
 
-
 #nav-top {
     background-color: #204527;
+}
+
+#nav-top nav a {
+    color: white;
 }
 
 #mobile-nav-bottom {
     background-color: var(--bg-color-mobile-nav);
 }
 
-
-#experience-container, #contact-form-btn, #requirement-container {
+#experience-container, #contact-form-btn, #requirement-container, #survey-form-container {
     margin-bottom: 100px;
+}
+
+.form-group ::placeholder {
+    color: var(--placeholder-color);
 }
 
 /*****************************/
@@ -36,9 +59,27 @@ body {
 .dark-mode {
     --background-color: #23272d;
     --bg-color-mobile-nav: #233b23;
+
     --contact-bg-color: rgba(47, 52, 59, 0.82);
-    --contact-border-color: #383c40;
+    --contact-border-color: #737373;
     --contact-font-color: white;
+    --placeholder-color: #b0b0b0;
+
+    --survey-bg-color: rgba(47, 52, 59, 0.82);
+    --survey-border-color: #737373;
+    --survey-font-color: white;
+    --score-color: darkseagreen;
+
+    --experience-bg-color: rgba(47, 52, 59, 0.82);
+    --experience-border-color: #737373;
+    --experience-font-color: white;
+
+    --buttn-bg-color:#89da52;
+    --button-border-color:#89da52;
+    --button-text-color:black;
+
+    --bs-accordion-bg-two: #2d3139;
+    --bs-accordion-color-two: #FFFFFF;
 }
 
 #darkmode-toggler {
@@ -48,6 +89,20 @@ body {
 #darkmode-toggler:hover {
     fill: #afadad;
     cursor: pointer;
+}
+
+/*****************************/
+/* Buttons **************/
+
+#survey-form-btn, #experience-form-btn {
+    justify-self: center;
+    width: 150px;
+}
+
+#contact-form-btn, #experience-form-btn, #survey-form-btn{
+    background-color: var(--buttn-bg-color);
+    border: var(--button-border);
+    color: var(--button-text-color);
 }
 
 /*****************************/
@@ -66,11 +121,6 @@ body {
     padding: 10px;
 }
 
-#contact-form-btn, #experience-form-btn {
-    background-color: #89da52;
-    border: transparent;
-}
-
 #message {
     resize: none;
     border-radius: 0 0 12px 12px;
@@ -84,23 +134,81 @@ body {
 
 /*****************************/
 /***** REQUIREMENTS FORM *****/
+
 .accordion{
     --bs-accordion-btn-bg:#A8D08D;
-    --bs-accordion-active-bg: #0D4722;
+    --bs-accordion-active-bg: #29432b;
     --bs-accordion-active-color: #ffffff;
     --bs-accordion-btn-focus-box-shadow:none;
-    --bs-accordion-bg: #F1F7ED;
+    --bs-accordion-bg: var(--bs-accordion-bg-two);
     --bs-accordion-btn-focus-border-color: unset;
+    --bs-accordion-color: var(--bs-accordion-color-two);
 }
 
 .accordion-button:not(.collapsed){
     box-shadow: none;
 }
 
-.accordion-button{
-    border-top: 1px solid #000000;
+
+/*****************************/
+/* SURVEY FORM ***************/
+
+#survey-form-container h1 {
+    font-size: 26px;
 }
 
-.accordion-item:last-child .accordion-button{
-    border-bottom: 2px solid  #000000;
+#survey-form label {
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-radius: 12px 12px 0 0;
+}
+
+#survey-form input {
+    padding: 10px;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid;
+}
+
+.slider {
+    padding: 16px;
+    height: 56px;
+}
+
+#survey-form sub{
+    font-size: calc(7px + .75vw);
+}
+
+#survey-form .rangeValue{
+    color: var(--score-color);
+}
+
+.required:after {
+    content: '*';
+    color: #c00b0b;
+}
+
+#survey-form textarea {
+    resize: none;
+    border-radius: 0 0 12px 12px;
+}
+
+#survey-form label, #survey-form input, #survey-form textarea {
+    background-color: var(--contact-bg-color);
+    border-color: var(--contact-border-color);
+    color: var(--contact-font-color);
+}
+
+#experience-card {
+    background-color: var(--experience-bg-color);
+    border-color: var(--experience-border-color);
+    color: var(--experience-font-color);
+}
+
+
+#experience-form-link {
+    text-decoration: none;
 }
