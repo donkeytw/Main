@@ -1,0 +1,112 @@
+html {
+  caret-color: transparent;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fcde9c;
+  display: grid;
+  grid-row-gap: 60px;
+}
+
+.navbar a {
+  color: white;
+  font-size: 12px;
+  padding: 2px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: #fbe9c9;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 12px;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+header {
+  background-color: #7b7263;
+}
+
+.navbar {
+  padding: 4px 10px;
+}
+
+#dropdown {
+  background-color: #645c4c;
+  padding-left: 10px;
+}
+
+.dropdown li {
+  color: cornflowerblue;
+}
+
+.sprint:hover {
+  background-color: transparent;
+}
+
+#navbarSupportedContent {
+  background-color: #7b7263;
+}
+
+.navbar-toggler:hover {
+  border: 1px solid #fbe9c9;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+}
+
+.navbar-toggler:after {
+  border: transparent;
+}
+
+#section1 div {
+  height: 300px;
+  width: 300px;
+  background-color: #ffa552;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+}
+
+#logo2 {
+  align-self: center;
+  width: 210px;
+  height: 190px;
+}
+
+#teamName {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2em;
+  text-align: center;
+  align-self: start;
+  margin-top: -20px;
+}
+
+#carouselExampleAutoplaying {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.card-img-top {
+  height: 30vh;
+  object-fit: contain;
+}
+
+#teamBio,
+#workingAgreement {
+  /*width: 80%;*/
+  border-radius: 20px;
+  background-color: #ffa552;
+  color: white;
+  margin: 0 auto;
+  padding: 14px;
+}
