@@ -1,112 +1,128 @@
 html {
-  caret-color: transparent;
-  overflow-x: hidden;
+    caret-color: transparent;
+    overflow-x: hidden;
 }
 
 body {
-  background-color: #fcde9c;
-  display: grid;
-  grid-row-gap: 60px;
+    background-color: #fcde9c;
+}
+
+/********************************************/
+/* NAV STYLES *******************************/
+
+#navbar {
+    background-color: #7b7263;
+    font-size: 14px;
+}
+
+#nav-logo {
+    width: 40px;
+    height: 40px;
+    background-color: #FFA552;
+    border-radius: 100%;
 }
 
 .navbar a {
-  color: white;
-  font-size: 12px;
-  padding: 2px 0;
-  font-family: "Montserrat", sans-serif;
+    color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 .navbar a:hover,
 .navbar a:active {
-  color: #fbe9c9;
-}
-
-.navbar-brand {
-  color: white;
-  font-size: 12px;
-}
-
-.navbar-brand:hover {
-  color: white;
-}
-
-header {
-  background-color: #7b7263;
-}
-
-.navbar {
-  padding: 4px 10px;
+    color: #fbe9c9;
 }
 
 #dropdown {
-  background-color: #645c4c;
-  padding-left: 10px;
-}
-
-.dropdown li {
-  color: cornflowerblue;
+    background-color: #645c4c;
+    font-size: 14px;
 }
 
 .sprint:hover {
-  background-color: transparent;
+    background-color: rgba(255, 165, 82, 0.75);
 }
 
 #navbarSupportedContent {
-  background-color: #7b7263;
+    background-color: #7b7263;
 }
 
 .navbar-toggler:hover {
-  border: 1px solid #fbe9c9;
+    border: 1px solid #fbe9c9;
 }
 
 .navbar-toggler-icon {
-  width: 30px;
+    width: 30px;
 }
 
-.navbar-toggler:after {
-  border: transparent;
-}
+/********************************************/
+/* LOGO STYLES ******************************/
 
 #section1 div {
-  height: 300px;
-  width: 300px;
-  background-color: #ffa552;
-  margin: 0 auto;
-  display: grid;
-  justify-content: center;
+    height: 300px;
+    width: 300px;
+    background-color: #ffa552;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
 #logo2 {
-  align-self: center;
-  width: 210px;
-  height: 190px;
+    align-self: center;
+    width: 210px;
+    height: 190px;
 }
 
 #teamName {
-  font-family: "Abril Fatface", cursive;
-  font-size: 2em;
-  text-align: center;
-  align-self: start;
-  margin-top: -20px;
+    font-family: "Abril Fatface", cursive;
+    font-size: 2em;
+    text-align: center;
+    align-self: start;
+    margin-top: -20px;
 }
 
+
+/********************************************/
+/* CAROUSEL STYLES **************************/
+
 #carouselExampleAutoplaying {
-  width: 60%;
-  margin: 0 auto;
-  padding-bottom: 50px;
+    max-width: 750px;
+    border-radius: 12px;
+    height: 700px;
+}
+
+.card-body {
+    margin: 0 auto;
+    background-color: #d0792b;
+    border-radius: 22px;
+    border: solid 8px #ffba7e;
 }
 
 .card-img-top {
-  height: 30vh;
-  object-fit: contain;
+    width: 20vh;
+    border-radius: 12px;
+}
+
+.card-text {
+    font-size: 14px;
 }
 
 #teamBio,
 #workingAgreement {
-  /*width: 80%;*/
-  border-radius: 20px;
-  background-color: #ffa552;
-  color: white;
-  margin: 0 auto;
-  padding: 14px;
+    border-radius: 20px;
+    background-color: #ffa552;
+    color: white;
+    margin: 0 auto;
+    padding: 14px;
+    max-width: 770px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/********************************************/
+/* WORKING AGREEMENT STYLES *****************/
+
+.list-group-item {
+    background-color: #d0792b;
+    border: solid 1px #eead6e;
+    color: white;
 }
