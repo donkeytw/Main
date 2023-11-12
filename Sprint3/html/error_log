@@ -1,3 +1,0 @@
-[31-Oct-2023 00:37:29 UTC] PHP Parse error:  syntax error, unexpected ''.$name'' (T_CONSTANT_ENCAPSED_STRING) in /home/donkeytw/public_html/Sprint2/html/contact.php on line 46
-[31-Oct-2023 00:37:37 UTC] PHP Parse error:  syntax error, unexpected ''.$name'' (T_CONSTANT_ENCAPSED_STRING) in /home/donkeytw/public_html/Sprint2/html/contact.php on line 46
-[31-Oct-2023 00:37:49 UTC] PHP Parse error:  syntax error, unexpected ''.$name'' (T_CONSTANT_ENCAPSED_STRING) in /home/donkeytw/public_html/Sprint2/html/contact.php on line 46
